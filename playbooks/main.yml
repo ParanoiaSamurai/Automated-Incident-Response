@@ -1,0 +1,4 @@
+---
+- import_playbook: collect_logs.yml
+- import_playbook: analyse_alert.yml
+- import_playbook: remediation.yml
