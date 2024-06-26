@@ -1,0 +1,15 @@
+---
+- name: Collect logs from Cisco routers
+  hosts: routers
+  gather_facts: no
+  tasks:
+    - name: Gather running config
+      cisco.ios.ios_command:
+        commands:
+          - show running-config
+      register: running_config
+
+    - name: Save running config to file
+      copy:
+        content: "{{ running_config.stdout[0] }}"
+        dest: "~/Desktop/ansible_playbooks/automated_Incident_Response/logs/alert_logs.txt"
