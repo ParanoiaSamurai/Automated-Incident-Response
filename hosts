@@ -1,0 +1,11 @@
+[routers]                                               
+                                                        
+"Your host name"                         
+                                                        
+[routers:vars]                                          
+                                                        
+ansible_user = "username"                                    
+ansible_password = "password"                           
+ansible_connection = network_cli                        
+ansible_network_os = ios                                
+ansible_port = 22 
