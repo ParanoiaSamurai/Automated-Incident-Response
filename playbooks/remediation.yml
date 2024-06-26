@@ -1,0 +1,12 @@
+---
+- name: Apply remediation on Cisco routers
+  hosts: routers
+  gather_facts: no
+  tasks:
+    - name: Apply configuration changes if any suspicious activity is seen
+      cisco.ios.ios_config:
+        lines: "{{ item }}"
+      loop:
+        - ["interface GigabitEthernet1.2000", "shutdown"]
+        - ["interface GigabitEthernet1.2001", "shutdown"]
+      when: issue_found | default(false)
