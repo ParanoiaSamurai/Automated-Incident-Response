@@ -23,7 +23,7 @@ Automated Incident Response/
 
 - Clone the repository
 ``` bash
-git clone https://github.com/your-username/incident-response.git
+git clone https://github.com/ParanoiaSamurai/incident-response.git
 cd incident-response
 ```
 - Configure the host file
