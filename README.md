@@ -23,12 +23,12 @@ Automated Incident Response/
 
 - Clone the repository
 ``` bash
-git clone https://github.com/ParanoiaSamurai/incident-response.git
-cd incident-response
+git clone https://github.com/ParanoiaSamurai/automated-incident-response.git
+cd automated-incident-response
 ```
 - Configure the host file
 ``` bash
-#[routers]                                              
+[routers]                                              
                                                         
 host name                         
                                                         
