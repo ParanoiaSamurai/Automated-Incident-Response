@@ -40,6 +40,9 @@ ansible_connection = network_cli #type of interface that you want to use
 ansible_network_os = ios # type of OS the device is using
 ansible_port = 22  
 ```
+
+- For Configuration of Ansible Config, if you are learning you can make the host_key_checking to False state or add SSH key to authenticate with the routers.
+
 - Ensure that the script is executable
 ``` bash
 chmod +x analyze_alerts.sh
